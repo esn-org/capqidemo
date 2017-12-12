@@ -1,0 +1,207 @@
+/*This is my local Style*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 54px;
+  margin-bottom: 100px; /* Margin bottom by footer height */
+}
+
+.solution_header{
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.tasks_group{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.task_header{
+  margin-top: 15px;
+  font-size: 1.25em;
+  margin-bottom: .5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.task{
+  font-size: 16px;
+  margin: 10px 20px;
+}
+
+.hints{
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.header_exercise{
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.flag-icon{
+  margin-right: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.fa-1x5{
+  font-size: 1.5em !important;
+  margin-right: 5px;
+}
+
+.solution{
+  margin-top: 25px;
+}
+
+#internships-block{
+  margin: 40px 0px 20px 0px;
+}
+
+.internship{
+  margin-bottom:20px;
+}
+
+.header-internship{
+  margin-bottom: 15px;
+}
+
+.img-header{
+  margin: 0px 10px;
+}
+
+.img-header img{
+  height: 80px;
+  vertical-align: middle;
+}
+
+.text-header .location{
+  font-size: 12px;
+  color: red;
+  padding-left: 20px;
+}
+
+.igp-widget img:first-child{
+  height:40px !important;
+  padding-bottom: 5px;
+}
+
+.igp-widget .average_rating_text{
+  word-wrap: normal;
+  padding-top: 10px;
+}
+
+.block-code{
+  margin: 10px 0px;
+}
+.block-code-text{
+  margin-bottom: 0px;
+}
+.step-header{
+  font-size: 24px;
+  font-style: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.step-text{
+  margin: 0px 20px;
+}
+
+.icon{
+  margin: 0px 5px;
+}
+
+.footer_hr{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+.rating_l {
+    font-size: 20px;
+    line-height: 1em;
+    height: 20px;
+    color: black;
+    font-weight: 600;
+}
+.rating_s {
+  font-size: 12px;
+  line-height: 1em;
+  height: 12px;
+  margin-left: 5px;
+}
+
+.popover-body{
+  font-size: 12px;
+}
+.rec{
+  margin-left: 20px;
+}
+
+.rem{
+  margin: 5px 0px;
+}
+
+.button_stats{
+  font-size: 12px;
+ white-space: normal;
+  text-align: left;
+  background-image: url(http://www.transparencyatwork.org/images/trusted_logo.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  /*<img src=\'http://www.transparencyatwork.org/images/trusted_logo.svg\' style=\'height: 30px; display: inline-block; vertical-align: middle; padding-right: 5px;\'>*/
+}
+
+.tooltip{
+  /*width: 300px;*/
+}
+
+.tooltip-inner{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  font-size: 10px;
+  width: 450px;
+}
+
+.recommended{
+  font-size: 1.75em;
+  font-style: bold;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+
