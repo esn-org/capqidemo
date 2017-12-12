@@ -1,5 +1,4 @@
-#Capqi Demo Code
-
+# Capqi Demo Code
 Demo used to show the PHP library and the widget of the CAPQI project
 
 This is an example of what the Widget and the [PHP Library of CAPQI](https://github.com/esn-org/capqiApi-library) can do.
