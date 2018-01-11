@@ -51,7 +51,7 @@ function generateBar($data){
 
 function generateTooltip($employer){
 
-  $html  = '<div class=\'rec\'>Recommended: <span class=\'recommended\'>'.$employer['recommended_employer_percentage'].'</span></div>';
+  $html  = '<div class=\'rec\'>Recommended: <span class=\'recommended\'>'.$employer['recommended_employer_percentage'].'</span> %</div>';
   $html .= '<hr class=\'footer_hr\'>';
   $html .= '<div class=\'rem\'>Remuneration<br>'.generateBar($employer['avg_compensation_benefits']).'</div>';
   $html .= '<div class=\'rem\'>Supervision & Management <br>'.generateBar($employer['avg_supervision_guidance']).'</div>';
@@ -60,7 +60,7 @@ function generateTooltip($employer){
   $html .= '<div class=\'rem\'>Learning Content <br>'.generateBar($employer['avg_learning_experience']).'</div>';
   $html .= '<div class=\'rem\'>Career Development <br>'.generateBar($employer['avg_career_development']).'</div>';
   $html .= '<hr class=\'footer_hr\'>';
-  $html .= '<a href=\''.$employer['web'].'\' type=\'button\' class=\'btn btn-link button_stats\' target=\'_blank\'>Check the complete statistics</a>';
+  $html .= '<a href=\''.$employer['profile_url'].'\' type=\'button\' class=\'btn btn-link button_stats\' target=\'_blank\'>Check the complete statistics</a>';
 
   return $html;
 }
@@ -140,8 +140,10 @@ function generateInternshipsWidget($internships, $type = 0){
                     <div class="rating">
                       <div class="rating_l">'.$internship['api']['average_ratings'].'</div><div class="rating_s"> / 5</div>
                     </div>
+                    
                   </div>
-                  <div class="col-auto">                
+                  <div class="col-auto">  
+                    <img class="employer_label" src="'.$internship['api']['employer_label_url'].'" alt="'.$internship['api']['employer_label'].'" title="'.$internship['api']['employer_label'].'"/>           
                     <span class="badge badge-primary pop" data-toggle="tooltip" data-container="body" data-placement="bottom" data-html="true" data-content="'.generateTooltip($internship['api']).'" data-original-title="" title="">View Statistics</span>
                     <a href="#" class="badge badge-warning">Send Review</a>
                   </div>
